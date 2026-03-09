@@ -25,6 +25,21 @@ done
 cp "$DOTFILES_DIR/.claude/plugins/installed_plugins.json" ~/.claude/plugins/installed_plugins.json
 echo "  Copied plugins/installed_plugins.json"
 
+# Generate known_marketplaces.json with correct $HOME for this machine
+cat > ~/.claude/plugins/known_marketplaces.json <<EOF
+{
+  "claude-plugins-official": {
+    "source": { "source": "github", "repo": "anthropics/claude-plugins-official" },
+    "installLocation": "$HOME/.claude/plugins/marketplaces/claude-plugins-official"
+  },
+  "voltagent-subagents": {
+    "source": { "source": "github", "repo": "VoltAgent/awesome-claude-code-subagents" },
+    "installLocation": "$HOME/.claude/plugins/marketplaces/voltagent-subagents"
+  }
+}
+EOF
+echo "  Generated plugins/known_marketplaces.json"
+
 # Install volt agent plugins via claude CLI if available
 if command -v claude &>/dev/null; then
   echo "  Installing volt agent plugins..."
