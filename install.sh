@@ -21,6 +21,11 @@ for file in CLAUDE.md settings.json; do
   echo "  Linked ~/.claude/$file"
 done
 
+# Copy subagent-catalog slash command
+mkdir -p ~/.claude/commands
+cp -r "$DOTFILES_DIR/.claude/commands/subagent-catalog" ~/.claude/commands/
+echo "  Copied commands/subagent-catalog"
+
 # Copy plugin manifests (not symlinked — paths are machine-specific)
 cp "$DOTFILES_DIR/.claude/plugins/installed_plugins.json" ~/.claude/plugins/installed_plugins.json
 echo "  Copied plugins/installed_plugins.json"
