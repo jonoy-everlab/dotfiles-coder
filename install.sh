@@ -43,7 +43,7 @@ echo "  Generated plugins/known_marketplaces.json"
 # Install volt agent plugins via claude CLI if available
 if command -v claude &>/dev/null; then
   echo "  Registering voltagent-subagents marketplace..."
-  claude marketplace add voltagent-subagents https://github.com/VoltAgent/awesome-claude-code-subagents --yes 2>/dev/null \
+  claude plugin marketplace add VoltAgent/awesome-claude-code-subagents 2>/dev/null \
     && echo "  ✓ marketplace registered" \
     || echo "  ✓ marketplace already registered (skipped)"
 
