@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "plugins": {
+    "voltagent-lang@voltagent-subagents": [
+      { "scope": "user", "version": "1.0.1", "gitCommitSha": "87321636a1c666283d8f17398b45c2644395044b" }
+    ],
+    "voltagent-infra@voltagent-subagents": [
+      { "scope": "user", "version": "1.0.1", "gitCommitSha": "87321636a1c666283d8f17398b45c2644395044b" }
+    ],
+    "voltagent-core-dev@voltagent-subagents": [
+      { "scope": "user", "version": "1.0.1", "gitCommitSha": "87321636a1c666283d8f17398b45c2644395044b" }
+    ],
+    "voltagent-qa-sec@voltagent-subagents": [
+      { "scope": "user", "version": "1.0.1", "gitCommitSha": "87321636a1c666283d8f17398b45c2644395044b" }
+    ],
+    "voltagent-data-ai@voltagent-subagents": [
+      { "scope": "user", "version": "1.0.1", "gitCommitSha": "87321636a1c666283d8f17398b45c2644395044b" }
+    ],
+    "voltagent-dev-exp@voltagent-subagents": [
+      { "scope": "user", "version": "1.0.1", "gitCommitSha": "87321636a1c666283d8f17398b45c2644395044b" }
+    ],
+    "voltagent-domains@voltagent-subagents": [
+      { "scope": "user", "version": "1.0.1", "gitCommitSha": "87321636a1c666283d8f17398b45c2644395044b" }
+    ],
+    "voltagent-biz@voltagent-subagents": [
+      { "scope": "user", "version": "1.0.1", "gitCommitSha": "87321636a1c666283d8f17398b45c2644395044b" }
+    ],
+    "voltagent-meta@voltagent-subagents": [
+      { "scope": "user", "version": "1.0.1", "gitCommitSha": "87321636a1c666283d8f17398b45c2644395044b" }
+    ],
+    "voltagent-research@voltagent-subagents": [
+      { "scope": "user", "version": "1.0.2", "gitCommitSha": "87321636a1c666283d8f17398b45c2644395044b" }
+    ]
+  }
+}
